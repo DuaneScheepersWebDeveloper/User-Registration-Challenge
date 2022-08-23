@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Registration Challenge</title>
+
+        <!-- link to styles -->
+        <link rel="stylesheet" href="./src/css/user-register.css">
+        
+        <!-- Link to Script -->
+        <script src="./src/js/user-register.js" defer></script>
+    </head>
+    
+    <body>
+
+        <nav> 
+            <button class="users" id="users-tab-button">Register User</button>
+            <button class="register" id="register-tab-button">View User List</button>
+        </nav>
+    <!-- /Conditional Nav buttons/ -->
+
+
+
+    <!-- First Tab -->
+        <section class="register">
+        
+            <form id="register-form">
+
+                <h1>User Registration Form</h1>
+                <input type="text" id="firstname" placeholder="Enter your first name">
+                <input type="text" id="lastname" placeholder="Enter your last name">
+                <input type="text" id="username" placeholder="Create a username">
+                <input type="email" id="email" placeholder="Enter your email address">
+                <input type="password" id="password" placeholder="Create a password">
+                <input type="submit" id="register-submit" value="Register">
+
+            </form>
+
+        </section>
+    <!--/ First Tab /-->
+    
+
+
+    <!-- Second Tab -->
+        <section class="users">
+
+            <!-- Tab header -->
+            <h1>System Users:</h1>          
+
+            <!-- Table of users -->
+            <ul id="user-list">
+
+                <!-- Table heading -->
+                <li class="header">
+                    <span>Username</span> 
+                    <span>Name</span>
+                    <span>Last Name</span>
+                    <span>Email Address</span>
+                    <span>Password</span> 
+                </li>
+
+                <!-- Mock Entry -->
+                <!-- Your JavaScript function should create elements that look like this -->
+                <li class="entry">
+                    <span>johndoe7</span> 
+                    <span>John</span>
+                    <span>Doe</span>
+                    <span>example.com</span>
+                    <span>ba7816bf8f01</span> 
+                </li>
+
+            </ul> 
+            <!-- Table of users -->
+
+        </section>
+    <!--/ Second Tab /-->
+
+    </body>
+
+</html>

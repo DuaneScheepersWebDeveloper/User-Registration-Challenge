@@ -1,0 +1,106 @@
+/* ----- APP Styles here ------ */
+
+    /*---------remove this comment to start---------
+
+        .register {
+            display: block;
+        } 
+
+        .users {
+            display: none;
+        }
+
+    ---------remove this comment to start---------*/
+
+
+    /* id for control form */
+    #register-form {
+        display: flex;
+        flex-direction: column;  
+        margin: 0 25vw;
+    }
+    #register-form input{
+        font-size: 1.25rem;  
+    }
+
+
+    /* header */
+    .header {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 0.5rem 0;
+        
+        background-color: rgb(36, 36, 36);
+        color: white;
+    }
+
+
+
+    /* Class for each user entry */
+    .entry {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: rgb(240, 240, 240); 
+        border-radius: 15px;
+        word-wrap: break-word;
+     
+    }
+    .entry span {
+        padding: 1rem;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+/* ------ General Styles ------ */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li {
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#register-form h1 {
+    padding: 1.5rem;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav button {
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 1px;
+    cursor: pointer;
+
+}
+
+header h1{
+    text-align: center;
+}

@@ -4,11 +4,10 @@ const registerButton = document.querySelector('#users-tab-button');
 const userListButton = document.querySelector('#register-tab-button');
 //---------------------------------------------------------------------
 const firstName = document.querySelector('#firstname').value;
-console.log(firstName);
-const lastName = document.querySelector('#lastname');
-const userName = document.querySelector('#username');
-const email = document.querySelector('#email');
-const password = document.querySelector('#password');
+const lastName = document.querySelector('#lastname').value;
+const userName = document.querySelector('#username').value;
+const email = document.querySelector('#email').value;
+const password = document.querySelector('#password').value;
 //---------------------------------------------------------------------
 const submit = document.getElementById('register-submit');
 //---------------------------------------------------------------------
@@ -20,7 +19,17 @@ userListButton.addEventListener('click', (e) => {
 	userTabs.style.display = 'block';
 	registerTab.style.display = 'none';
 });
-
+const registerUser = (e) => {
+	console.log(firstName);
+	console.log(lastName);
+	console.log(userName);
+	console.log(email);
+	console.log(password);
+	if (!isValid) {
+		e.preventDefault(); //stop form from submitting
+	}
+};
+submit.addEventListener('click', registerUser);
 //---------------------------------------------------------------------
 const userList = {
 	firstName: 'John',

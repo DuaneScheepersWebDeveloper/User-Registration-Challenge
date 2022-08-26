@@ -6,12 +6,12 @@
 	display: none;
 }
 
-#register-form {
+#registerForm {
 	display: flex;
 	flex-direction: column;
 	margin: 0 25vw;
 }
-#register-form input {
+#registerForm input {
 	font-size: 1.25rem;
 }
 #register-submit:hover {
